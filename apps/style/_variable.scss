@@ -1,5 +1,6 @@
-.App {
-    --bg-color: #f6f8ff;
+:root {
+    --bg-color: #f6f8ffcc;
+    --stat-bg-color: #e9ebf5;
     --profile-bg: #fff;
     --btn-color: #0079ff;
     --text-color-1: #4b7a9b;
@@ -8,7 +9,7 @@
     --shadow: #4660bb32;
 }
 
-.App.dark {
+:root .dark {
     --bg-color: #141d2f;
     --profile-bg: #1e2a47;
     --text-color-1: #fff;

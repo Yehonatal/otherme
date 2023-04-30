@@ -68,6 +68,7 @@ svg {
 .flex-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -82,6 +83,12 @@ svg {
 // General styles
 body {
     font-family: "Space Mono", monospace;
+    background-color: var(--bg-color);
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 button {

@@ -1,0 +1,133 @@
+.App {
+    max-width: 750px;
+    width: 100%;
+
+    .header,
+    .search,
+    .profile-card {
+        border-radius: 10px;
+        margin: 15px 0;
+        padding: 20px;
+        background-color: var(--profile-bg);
+        // border: 1px solid green;
+        box-shadow: 10px 10px 15px var(--shadow);
+    }
+    .header {
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        padding: 20px 0;
+    }
+
+    .search {
+        padding: 10px;
+        input {
+            flex: 1;
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+        button {
+            border: none;
+            background-color: var(--btn-color);
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 5px;
+            margin-left: auto;
+            padding: 10px 25px;
+        }
+    }
+
+    .profile-card {
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            flex: 1;
+        }
+
+        header,
+        section,
+        footer > div {
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+
+            .joined-date {
+                margin-left: auto;
+            }
+        }
+
+        .user-name {
+            h1 {
+                font-weight: bolder;
+                font-size: 2rem;
+            }
+            a {
+                color: var(--btn-color) !important;
+            }
+        }
+
+        .bio {
+            // border: 1px dashed turquoise;
+        }
+
+        .stat {
+            justify-content: space-between;
+            background-color: var(--stat-bg-color);
+            font-weight: bolder;
+
+            p {
+                color: var(--text-color-2);
+                font-size: 0.75rem;
+            }
+            span {
+                font-size: 1.25rem;
+            }
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+
+            @include breakpoints-down(small) {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            div {
+                padding: 10px;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+.user-avatar {
+    width: 125px;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color-1);
+}
