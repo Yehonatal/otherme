@@ -1,6 +1,7 @@
 .App {
     max-width: 750px;
     width: 100%;
+    margin: 0 30px;
 
     .header,
     .search,
@@ -17,6 +18,32 @@
         box-shadow: none;
         border: none;
         padding: 20px 0;
+
+        h2 {
+            font-weight: bolder;
+            letter-spacing: 1px;
+            color: var(--bold-text-color);
+        }
+
+        button {
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: transparent;
+            transition: all 0.5ms ease-in-out;
+
+            p {
+                color: var(--text-color-2);
+                text-transform: uppercase;
+                flex: 1;
+            }
+
+            img {
+                flex: 1;
+            }
+        }
     }
 
     .search {
@@ -28,7 +55,12 @@
             margin-left: 10px;
             font-family: inherit;
             font-size: 1rem;
+            background-color: transparent;
             font-weight: bolder;
+
+            &::placeholder {
+                color: var(--text-color-2);
+            }
         }
         button {
             border: none;
@@ -66,6 +98,7 @@
             flex-wrap: wrap;
 
             .joined-date {
+                color: var(--text-color-2);
                 margin-left: auto;
             }
         }
@@ -73,6 +106,7 @@
         .user-name {
             h1 {
                 font-weight: bolder;
+                color: var(--bold-text-color);
                 font-size: 2rem;
             }
             a {
@@ -81,6 +115,7 @@
         }
 
         .bio {
+            color: var(--text-color-1);
             // border: 1px dashed turquoise;
         }
 
@@ -94,7 +129,8 @@
                 font-size: 0.75rem;
             }
             span {
-                font-size: 1.25rem;
+                color: var(--bold-text-color);
+                font-size: 1.5rem;
             }
         }
 

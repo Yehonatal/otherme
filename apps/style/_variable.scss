@@ -1,4 +1,4 @@
-:root {
+.light {
     --bg-color: #f6f8ffcc;
     --stat-bg-color: #e9ebf5;
     --profile-bg: #fff;
@@ -9,8 +9,10 @@
     --shadow: #4660bb32;
 }
 
-:root .dark {
+.dark {
     --bg-color: #141d2f;
+    --stat-bg-color: #141d2f;
+    --btn-color: #0079ff;
     --profile-bg: #1e2a47;
     --text-color-1: #fff;
     --text-color-2: #fff;

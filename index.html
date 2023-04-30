@@ -20,13 +20,16 @@
             crossorigin="anonymous"
         ></script>
     </head>
-    <body>
+    <body class="light">
         <main class="App">
             <div class="container">
                 <!-- Logo and Theme -->
                 <header class="header flex-row flex-jc-sb">
                     <h2>OtherMe</h2>
-                    <button class="switch flex-row flex-jc-sb">
+                    <button
+                        class="switch flex-row flex-jc-sb"
+                        onclick="switch_theme(this)"
+                    >
                         <p>Dark</p>
                         <img
                             src="assets/images/icon-moon.svg"
