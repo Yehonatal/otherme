@@ -1,0 +1,1 @@
+Api: https://api.github.com/users/${queryString}
