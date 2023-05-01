@@ -4,7 +4,7 @@ const themeBtn = document.querySelector(".theme-btn");
 const searchBtn = document.querySelector(".search__btn");
 const searchBox = document.querySelector(".search__box");
 const userAvatar = document.querySelector(".user-avatar");
-const userName = document.querySelector(".name");
+const name = document.querySelector(".name");
 const userLogin = document.querySelector(".login");
 const joinedDate = document.querySelector(".joined-date");
 const userBio = document.querySelector(".bio");
@@ -65,7 +65,7 @@ searchBtn.addEventListener("click", async (e) => {
         const data = await response.json();
 
         userAvatar.src = data.avatar_url;
-        userName.innerText = data.name || "Not Available";
+        name.innerText = data.name || "Not Available";
         userLogin.innerText = `@${data.login}`;
         userLogin.href = `https://github.com/${userName}`;
 
@@ -75,7 +75,7 @@ searchBtn.addEventListener("click", async (e) => {
         const dd = dates[2];
         joinedDate.innerText = `Joined ${dd} ${mm} ${yyyy}`;
 
-        userBio.innerText = data.bio || "";
+        userBio.innerText = data.bio || "This profile has no bio";
         userRepo.innerText = data.public_repos;
         userFollower.innerText = data.followers;
         userFollowing.innerText = data.following;
