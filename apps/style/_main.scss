@@ -97,10 +97,14 @@
         header {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
 
             .joined-date {
                 color: var(--text-color-2);
-                margin-left: auto;
+
+                @include breakpoints-up(medium) {
+                    margin-left: auto;
+                }
             }
         }
 
@@ -109,6 +113,7 @@
                 font-weight: bolder;
                 color: var(--bold-text-color);
                 font-size: 2rem;
+                line-height: 1;
             }
             a {
                 color: var(--btn-color) !important;
@@ -141,6 +146,7 @@
             gap: 10px;
 
             @include breakpoints-down(small) {
+                gap: 0px;
                 display: flex;
                 flex-wrap: wrap;
             }
