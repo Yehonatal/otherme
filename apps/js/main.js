@@ -1,4 +1,18 @@
 const body = document.querySelector("body");
+
+const isDarkMode =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+// Use the color scheme variable in your code
+if (isDarkMode) {
+    body.classList.add("dark");
+    body.classList.remove("light");
+} else {
+    body.classList.add("light");
+    body.classList.remove("dark");
+}
+
 function switch_theme(btn) {
     if (body.classList.contains("light")) {
         body.classList.add("dark");
@@ -55,7 +69,7 @@ const months = [
 search.addEventListener("click", (e) => {
     e.preventDefault();
     let userName = input.value.trim();
-    userName = "RobiMez";
+    // userName = "RobiMez";
     // userName = "R4nn3r";
 
     if (userName.length == 0) {

@@ -55,9 +55,11 @@
             outline: none;
             margin-left: 10px;
             font-family: inherit;
-            font-size: 1rem;
+            font-size: 1.1rem;
             background-color: transparent;
             font-weight: bolder;
+            margin-right: 20px;
+            width: 50%;
 
             &::placeholder {
                 color: var(--text-color-2);
