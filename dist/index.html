@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>otherme</title>
+
+        <!-- Link's -->
+        <link rel="stylesheet" href="apps/style/style.css" />
+        <link
+            rel="shortcut icon"
+            href="assets/images/github-icon.png"
+            type="image/x-icon"
+        />
+
+        <!-- Icon's -->
+        <script
+            src="https://kit.fontawesome.com/5b12988027.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <main class="App">
+            <div class="container">
+                <!-- Logo and Theme -->
+                <header class="header flex-row flex-jc-sb">
+                    <h2>OtherMe</h2>
+                    <button
+                        class="switch flex-row flex-jc-sb"
+                        onclick="switch_theme(this)"
+                    >
+                        <p>Dark</p>
+                        <img
+                            src="assets/images/icon-moon.svg"
+                            alt="Icon for the themes which can be a moon or the sun"
+                        />
+                    </button>
+                </header>
+
+                <!-- Search -->
+                <form class="search flex-row">
+                    <img src="assets/images/icon-search.svg" alt="search" />
+                    <input
+                        type="text"
+                        class="search__box"
+                        placeholder="Search GitHub Username..."
+                    />
+                    <button class="search__btn" onclick="find()">Search</button>
+                </form>
+
+                <!-- Main Card -->
+                <article class="profile-card flex-row">
+                    <div class="default">
+                        <img
+                            src="https://avatars.githubusercontent.com/u/583231?v=4"
+                            alt="user avatar default image of the github logo"
+                            class="user-avatar"
+                        />
+                    </div>
+                    <div class="right">
+                        <header>
+                            <div class="user-name">
+                                <h1 class="name">The Octocat</h1>
+                                <a
+                                    class="login"
+                                    href="https://github.com/octocat"
+                                    target="_blank"
+                                    >@octocat</a
+                                >
+                            </div>
+                            <p class="joined-date">Joined 25 Jan 2011</p>
+                        </header>
+
+                        <!-- Bio -->
+                        <section class="bio">This profile has no bio</section>
+
+                        <!-- statistic -->
+                        <section class="stat flex-row">
+                            <div>
+                                <p>Repos</p>
+                                <span class="repo">8</span>
+                            </div>
+                            <div>
+                                <p>Followers</p>
+                                <span class="follower">8606</span>
+                            </div>
+                            <div>
+                                <p>Following</p>
+                                <span class="following">9</span>
+                            </div>
+                        </section>
+
+                        <!-- Links for the profile -->
+                        <footer class="links">
+                            <div>
+                                <a
+                                    href="https://maps.google.com/?q= San Francisco"
+                                    target="_blank"
+                                    class="available"
+                                    ><img
+                                        src="assets/images/icon-location.svg"
+                                        alt="Location Icon"
+                                    />
+                                    <span class="location"
+                                        >San Francisco</span
+                                    ></a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="https://twitter.com/search/?q=null"
+                                    target="_blank"
+                                    class="not-available"
+                                    ><img
+                                        src="assets/images/icon-twitter.svg"
+                                        alt="Twitter Icon"
+                                    /><span class="twtr">Not Available</span></a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="https://github.blog"
+                                    target="_blank"
+                                    class="available"
+                                    ><img
+                                        src="assets/images/icon-website.svg"
+                                        alt="Blog Icon"
+                                    /><span class="blog"
+                                        >https://github.blog</span
+                                    ></a
+                                >
+                            </div>
+                            <div>
+                                <a
+                                    href="https://www.google.com/search?q=@github"
+                                    target="_blank"
+                                    class="available"
+                                    ><img
+                                        src="assets/images/icon-company.svg"
+                                        alt="Company Icon"
+                                    /><span class="work">@github</span></a
+                                >
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- Main Js File link  -->
+        <script src="apps/js/main.js"></script>
+    </body>
+</html>
