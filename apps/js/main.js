@@ -13,4 +13,28 @@ function switch_theme(btn) {
     }
 }
 
+// Getting the data from the API
+const search = document.querySelector(".search__btn");
+const input = document.querySelector(".search__box");
 
+search.addEventListener("click", (e) => {
+    e.preventDefault();
+    const userName = input.value.trim();
+
+    if (userName.length == 0) {
+        input.parentNode.classList.add("error");
+        input.parentNode.querySelector("img").src =
+            "assets/images/icon-search-error.svg";
+    } else {
+        input.parentNode.classList.remove("error");
+    }
+});
+
+/* function find() {
+    console.log("Clicked on search");
+
+
+
+    console.log("User name: " + userName);
+}
+ */

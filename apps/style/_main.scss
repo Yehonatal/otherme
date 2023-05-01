@@ -48,6 +48,7 @@
 
     .search {
         padding: 10px;
+        border: 1px solid transparent;
         input {
             flex: 1;
             border: none;
@@ -63,7 +64,7 @@
             }
         }
         button {
-            border: none;
+            border: 1px solid transparent;
             background-color: var(--btn-color);
             color: white;
             font-weight: bold;
@@ -166,4 +167,18 @@
 a {
     text-decoration: none;
     color: var(--text-color-1);
+}
+
+// Error styles
+.error {
+    border: 1px solid tomato !important;
+
+    input::placeholder {
+        color: tomato !important;
+    }
+
+    button {
+        border: 1px solid tomato !important;
+        background-color: tomato !important;
+    }
 }
